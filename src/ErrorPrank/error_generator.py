@@ -606,4 +606,34 @@ is_long = True
 is_silly = True
 generate_crash_report(is_long, is_silly)
 
-# ------------------------- End of Crash Report Generator Code ---------------------------
+import random
+
+# ------------------------ Hacked Message Generator Code -----------------------------
+def generate_hacked_message(length=0, is_silly=False):
+    hacked_messages = []
+    
+    for _ in range(length):
+        if is_silly:
+            hacker = random.choice(silly_hackers)
+            hacker_name = random.choice(silly_hacker_names)
+            verb = random.choice(silly_verbs)
+            computer_entity = random.choice(silly_computer_entities)
+            message = f"Warning! Your {computer_entity} has been {verb} by a {hacker}."
+            message += f"\n  - Hacked by: {hacker_name}"
+            message += f"\n  - Hacking ID: {random.randint(10000, 99999)}"
+        else:
+            # Generate a standard hacked message
+            message = f"Warning! Your computer has been hacked by an anonymous hacker."
+            message += f"\n  - Hacker ID: {random.randint(10000, 99999)}"
+            message += f"\n  - Hacking Timestamp: {random.randint(1, 12)}:{random.randint(0, 59)} AM"
+        
+        hacked_messages.append(message)
+
+    return hacked_messages
+
+silly_hackers = ["potato", "robot", "friendly alien", "unicorn", "talking toaster"]
+silly_hacker_names = ["Potato Inc.", "Robotron", "Zog the Alien", "Fluffy the Unicorn", "Toasty McTalkface"]
+silly_verbs = ["hacked", "tickled", "pranked", "confused", "sang to"]
+silly_computer_entities = ["laptop", "fridge", "smartphone", "toilet", "coffee maker"]
+
+# ------------------------ End of Hacked Message Generator Code -----------------------------
