@@ -12,7 +12,7 @@ src_directory = os.path.join(current_directory, '..', 'src')
 # Add the src directory to sys.path
 sys.path.append(src_directory)
 
-from crash import generate_crash_report, silly_long, silly_short, long, short
+from pyprankerror import generate_crash_report, silly_long, silly_short, long, short
 
 # --------------- Crash Report Test Code ---------------------
 @pytest.fixture
