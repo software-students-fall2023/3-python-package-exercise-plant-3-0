@@ -305,7 +305,7 @@ Address    Data
 0x7FFFFFE8 0xCCCCCCCC
 0x7FFFFFEC 0xDDDDDDDD"""
 
-l3 = """Log Name: Application
+l3 = r"""Log Name: Application
 Source: Application Error
 Date: 2023-11-02 14:30:45
 Event ID: 1001
