@@ -1,5 +1,35 @@
 import random
 
+# ------------------------ Hacked Message Generator Code -----------------------------
+silly_hackers = ["potato", "robot", "friendly alien", "unicorn", "talking toaster"]
+silly_hacker_names = ["Potato Inc.", "Elon Musk", "Zog the Alien", "Fluffy the Unicorn", "Toasty McTalkface"]
+silly_computer_entities = ["laptop", "fridge", "smartphone", "toilet", "coffee maker"]
+
+# Define the generate_hacked_message function
+def generate_hacked_message(is_long=False, is_silly=False):
+    hacked_messages = []
+
+    for _ in range(5 if is_long else 1):
+        if is_silly:
+            hacker = random.choice(silly_hackers)
+            hacker_name = random.choice(silly_hacker_names)
+            computer_entity = random.choice(silly_computer_entities)
+            message = f"Warning! Your {computer_entity} has been hacked by a {hacker}."
+            message += f"\n  - Hacked by: {hacker_name}"
+            message += f"\n  - Hacking ID: {random.randint(10000, 99999)}"
+        else:
+            # Generate a standard hacked message
+            message = f"Warning! Your computer has been hacked by an anonymous hacker."
+            message += f"\n  - Hacker ID: {random.randint(10000, 99999)}"
+            message += f"\n  - Hacking Timestamp: {random.randint(1, 12)}:{random.randint(0, 59)} AM"
+
+        hacked_messages.append(message)
+
+    return hacked_messages
+
+# ------------------------ End of Hacked Message Generator Code -----------------------------
+
+
 # ------------------------ Stack Trace Generator Code -----------------------------
 def generate_stacktrace(length = 0, is_silly=False):
     short = "Traceback (most recent call last):\n  File \"\\Users\\pyperror\\utils\\migration_utils.py\", line 887, in <module>\n    is_approved = calculate_triangle_area(user_responses)\n  File \"\\Users\\pyperror\\api\\product_api.py\", line 487, in calculate_triangle_area\n    is_approved = validate_user_age(word_count)\n  File \"\\Users\\pyperror\\config\\email_config.py\", line 630, in validate_user_age\n    credit_card_number = validate_product_code(order_status)\nTypeError: unsupported operand type(s) for +: 'int' and 'str'"
@@ -606,4 +636,3 @@ is_long = True
 is_silly = True
 generate_crash_report(is_long, is_silly)
 
-# ------------------------- End of Crash Report Generator Code ---------------------------

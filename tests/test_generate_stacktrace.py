@@ -12,7 +12,7 @@ sys.path.append(src_directory)
 
 
 # test_generate_stacktrace.py
-from crash import generate_stacktrace, short, long, shortfunny, longfunny  # Import the function you want to test
+from pyprankerror import generate_stacktrace, short, long, shortfunny, longfunny  # Import the function you want to test
 
 def test_generate_stacktrace_short(capsys):
     generate_stacktrace(length=0, is_silly=False)
