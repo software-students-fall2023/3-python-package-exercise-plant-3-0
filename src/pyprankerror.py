@@ -2,7 +2,7 @@ import random
 
 # ------------------------ Hacked Message Generator Code -----------------------------
 silly_hackers = ["potato", "robot", "friendly alien", "unicorn", "talking toaster"]
-silly_hacker_names = ["Potato Inc.", "Elon Musk", "Zog the Alien", "Fluffy the Unicorn", "Toasty McTalkface"]
+silly_hacker_names = ["Potato Inc.", "Elon Musk", "Zog the Alien", "Fluffy the Unicorn", "slurp-slurp"]
 silly_computer_entities = ["laptop", "fridge", "smartphone", "toilet", "coffee maker"]
 
 # Define the generate_hacked_message function
