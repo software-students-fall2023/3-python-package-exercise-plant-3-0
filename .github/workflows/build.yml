@@ -16,7 +16,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pipenv --python ${{ matrix.python-version }} installÍ
+          pipenv --python ${{ matrix.python-version }} install
           pip install --user pipenv
           pipenv install pytest
           pipenv install
