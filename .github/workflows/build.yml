@@ -16,7 +16,6 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pipenv --python ${{ matrix.python-version }} install
           pip install --user pipenv
           pipenv install pytest
           pipenv install
@@ -41,7 +40,7 @@ jobs:
       - name: Build package
         run: |
           pipenv install build
-          pipenv run python -m build .
+          PYENV_VERSION="${{ matrix.python-version }}" pipenv run python -m build .
       - name: Publish to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
