@@ -639,7 +639,7 @@ is_silly = True
 generate_crash_report(is_long, is_silly)
 
 # ------------------------ Generate Error Function -----------------------------
-def generate_error(err_type, isSilly):
+def generate_error(err_type, isSilly=False):
     if not isSilly:
         if err_type == "syntax":
             return "SyntaxError: unexpected EOF while parsing"

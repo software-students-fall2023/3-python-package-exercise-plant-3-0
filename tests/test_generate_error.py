@@ -1,7 +1,7 @@
 # test_generate_error.py
 
 import pytest
-from your_module import generate_error
+from pyprankerror import generate_error
 
 # Test Case 1: isSilly defaults to False if the arg is not included
 def test_isSilly_default():
