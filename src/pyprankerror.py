@@ -638,3 +638,26 @@ is_long = True
 is_silly = True
 generate_crash_report(is_long, is_silly)
 
+# ------------------------ Generate Error Function -----------------------------
+def generate_error(err_type, isSilly=False):
+    if not isSilly:
+        if err_type == "syntax":
+            return "SyntaxError: unexpected EOF while parsing"
+        
+        if err_type == "runtime":
+            return "NameError: name 'undefined_variable' is not defined"
+        
+        if err_type == "logical":
+            return "In JavaScript 0+1 == True"
+    
+    else:
+        if err_type == "syntax":
+            return "SINNNNNtaxError: unexpected EOF while parsing HEHE"
+        
+        if err_type == "runtime":
+            return "NAMEMEMEMEError: HEHEHAHA name 'undefined_variable' is not defined"
+        
+        if err_type == "logical":
+            return "THE LOGIC IS NOT RIGHT"
+        
+# ------------------------ End of Generate Error Function-----------------------------

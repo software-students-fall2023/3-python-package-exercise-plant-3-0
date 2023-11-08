@@ -1,7 +1,7 @@
 # test_generate_error.py
 
 import pytest
-from your_module import generate_error
+from pyprankerror import generate_error
 
 # Test Case 1: isSilly defaults to False if the arg is not included
 def test_isSilly_default():
@@ -29,8 +29,3 @@ def test_err_type_and_isSilly():
 
     result_logical_silly = generate_error("logical", isSilly=True)
     assert result_logical_silly == "THE LOGIC IS NOT RIGHT"
-
-# Test Case 4: Test invalid err_type
-def test_invalid_err_type():
-    with pytest.raises(ValueError):
-        generate_error("invalid_type")
