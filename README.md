@@ -48,7 +48,8 @@ Description: Returns a fake error message
 * err_type (str): Indicate a “syntax”, “runtime” or “logical” error type.
 * is_silly (bool): True indicates silly and less realistic and crash report.
 
-### [example Python program](insert link!!!)
+### [Example project](example-program.py)
+Run `python example-program.py`
 
 ## How to contribute
 
