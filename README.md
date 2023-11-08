@@ -1,3 +1,5 @@
+![Workflow Status](https://github.com/software-students-fall2023/3-python-package-exercise-plant-3-0/actions/workflows/build.yml/badge.svg)
+
 # PyPrankError
 PyPrankError is a Python package that lets the user create silly (or serious) error messages, stack traces, crash reports, and hacked messages for a pranks purpose.
 
