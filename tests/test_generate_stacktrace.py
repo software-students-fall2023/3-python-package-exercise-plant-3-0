@@ -1,18 +1,9 @@
 import pytest
 import sys
 import os
-# Get the path of the current directory (where your test script is located)
-current_directory = os.path.dirname(os.path.abspath(__file__))
-
-# Calculate the path to the src directory
-src_directory = os.path.join(current_directory, '..', 'src')
-
-# Add the src directory to sys.path
-sys.path.append(src_directory)
-
 
 # test_generate_stacktrace.py
-from pyprankerror import generate_stacktrace, short, long, shortfunny, longfunny  # Import the function you want to test
+from src.pyprankerror import generate_stacktrace, short, long, shortfunny, longfunny  # Import the function you want to test
 @pytest.fixture
 
 

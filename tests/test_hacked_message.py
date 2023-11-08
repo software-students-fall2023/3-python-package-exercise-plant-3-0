@@ -1,6 +1,6 @@
 import pytest
 from unittest.mock import patch
-from pyprankerror import generate_hacked_message
+from src.pyprankerror import generate_hacked_message
 
 # Define the mock_random_choice fixture in the test module
 @pytest.fixture
