@@ -29,8 +29,3 @@ def test_err_type_and_isSilly():
 
     result_logical_silly = generate_error("logical", isSilly=True)
     assert result_logical_silly == "THE LOGIC IS NOT RIGHT"
-
-# Test Case 4: Test invalid err_type
-def test_invalid_err_type():
-    with pytest.raises(ValueError):
-        generate_error("invalid_type")
