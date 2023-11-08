@@ -1,4 +1,4 @@
-import pyprankerror
+from PyPrankError import pyprankerror
 
 # ------- Generate Error --------
 print(pyprankerror.generate_error("syntax"))
