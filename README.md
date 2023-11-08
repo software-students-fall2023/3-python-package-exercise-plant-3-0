@@ -35,6 +35,7 @@ Description: Prints a fake crash report
 
 
 `generate_error(err_type, isSilly)`
+
 Description: Prints a fake error message
 
 * err_type (str): Indicate a “syntax”, “runtime” or “logical” error type.
