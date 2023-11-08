@@ -9,13 +9,16 @@ PyPrankError is a Python package that lets the user create silly (or serious) er
 3. [Phoebus Yip](https://github.com/phoebusyip)
 4. [Alicia Hwang](https://github.com/a-j-hwang)
 
+## [link to our package's page on the PyPI website](insert link!!!)
+
 ## How to Install and Use
-Run `pip install -i https://test.pypi.org/simple/ pyprankerror`
+In your project directory, run `pip install pyprankerror==1.0.0`.
 
 Now import pyprankerror to use it your own program:
 
 `import pyprankerror`
 
+### Documentation for all functions:  
 
 `generate_hacked_message(is_long, is_silly)`
 
@@ -44,3 +47,37 @@ Description: Prints a fake error message
 
 * err_type (str): Indicate a “syntax”, “runtime” or “logical” error type.
 * is_silly (bool): True indicates silly and less realistic and crash report.
+
+### [example Python program](insert link!!!)
+
+## How to contribute
+
+### To test, build, and distribute with GitHub repo code
+- To contribute to our package, please clone [this](https://github.com/software-students-fall2023/3-python-package-exercise-plant-3-0) repository.   
+- Move into the project directory and proceed to following steps:  
+- Install `pipenv` if you have not already done so: `pip install pipenv`   
+- If you have already installed but cannot use `pipenv`, use `python -m pipenv` for all `pipenv` commands instead.  
+- Activate the virtual environment and install project dependencies with pipenv:  
+`pipenv --python 3.x` # Replace '3.x' with your desired Python version  
+- Activate the virtual environment: `pipenv shell`  
+(You might need to install `pipenv` in the virtual environment again if you receive error when activating it.)  
+- Install project dependencies, including dev packages: `pipenv install --dev`
+- Test the source code with Pytest from the main project directory: `pytest` 
+- Install build if you haven't: `pip install build`  
+- When you are satisfied with the change and wish to build and distribute, make the build: `python -m build`, increment the version number, and then upload to GitHub or PyPI depending on the need of the developers.
+
+### To test, build, and distribute with package from PyPI
+- Try [installing and using your package](https://packaging.python.org/en/latest/tutorials/packaging-projects/#installing-your-newly-uploaded-package) in a separate Python project
+- Install `pipenv` if you have not already done so: `pip install pipenv`   
+- Create a pipenv-managed virtual environment and install the latest version of your package installed:  `pipenv install -i <link to package>` (Note that if you've previously created a pipenv virtual environment in the same directory, you may have to delete the old one first. Find out where it is located with the pipenv --venv command.)  
+- Activate the virtual environment: `pipenv shell` 
+- Write test code. Note that when testing a PyPI package, the import statement should look like `from PyPrankError import pyprankerror`. If you use any test code from the repository, remove the `src.` in the import statements. 
+- Test the source code with Pytest from the root directory: `pytest` 
+- Install build if you haven't: `pip install build`  
+- Include a pyproject.toml file. You can copy from the repository and increment the version number.
+- When you are satisfied with the change and wish to build and distribute, make the build: `python -m build` and then upload to GitHub or PyPI depending on the need of the developers.
+
+
+
+
+
