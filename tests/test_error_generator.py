@@ -4,7 +4,7 @@ import sys
 import os
 
 
-from src.pyprankerror import generate_crash_report, silly_long, silly_short, long, short
+from src.PyPrankError.pyprankerror import generate_crash_report, silly_long, silly_short, long, short
 
 # --------------- Crash Report Test Code ---------------------
 @pytest.fixture

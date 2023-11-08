@@ -1,7 +1,29 @@
 import random
-# some useless comments to trigger changes. TO DELETE
-# some useless comments to trigger changes. TO DELETE
-# some useless comments to trigger changes. TO DELETE
+
+# ------------------------ Generate Error Function -----------------------------
+def generate_error(err_type, isSilly=False):
+    if not isSilly:
+        if err_type == "syntax":
+            return "SyntaxError: unexpected EOF while parsing"
+        
+        if err_type == "runtime":
+            return "NameError: name 'undefined_variable' is not defined"
+        
+        if err_type == "logical":
+            return "In JavaScript 0+1 == True"
+    
+    else:
+        if err_type == "syntax":
+            return "SINNNNNtaxError: unexpected EOF while parsing HEHE"
+        
+        if err_type == "runtime":
+            return "NAMEMEMEMEError: HEHEHAHA name 'undefined_variable' is not defined"
+        
+        if err_type == "logical":
+            return "THE LOGIC IS NOT RIGHT"
+        
+# ------------------------ End of Generate Error Function-----------------------------
+
 # ------------------------ Hacked Message Generator Code -----------------------------
 silly_hackers = ["potato", "robot", "friendly alien", "unicorn", "talking toaster"]
 silly_hacker_names = ["Potato Inc.", "Elon Musk", "Zog the Alien", "Fluffy the Unicorn", "slurp-slurp"]
@@ -638,26 +660,3 @@ is_long = True
 is_silly = True
 generate_crash_report(is_long, is_silly)
 
-# ------------------------ Generate Error Function -----------------------------
-def generate_error(err_type, isSilly=False):
-    if not isSilly:
-        if err_type == "syntax":
-            return "SyntaxError: unexpected EOF while parsing"
-        
-        if err_type == "runtime":
-            return "NameError: name 'undefined_variable' is not defined"
-        
-        if err_type == "logical":
-            return "In JavaScript 0+1 == True"
-    
-    else:
-        if err_type == "syntax":
-            return "SINNNNNtaxError: unexpected EOF while parsing HEHE"
-        
-        if err_type == "runtime":
-            return "NAMEMEMEMEError: HEHEHAHA name 'undefined_variable' is not defined"
-        
-        if err_type == "logical":
-            return "THE LOGIC IS NOT RIGHT"
-        
-# ------------------------ End of Generate Error Function-----------------------------
