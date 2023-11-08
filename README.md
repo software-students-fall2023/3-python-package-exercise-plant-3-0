@@ -9,10 +9,10 @@ PyPrankError is a Python package that lets the user create silly (or serious) er
 3. [Phoebus Yip](https://github.com/phoebusyip)
 4. [Alicia Hwang](https://github.com/a-j-hwang)
 
-## [link to our package's page on the PyPI website](insert link!!!)
+## [link to our package's page on the PyPI website](https://pypi.org/project/pyprankerror/)
 
 ## How to Install and Use
-In your project directory, run `pip install -i https://test.pypi.org/simple/ pyprankerror==1.0.0`.
+In your project directory, run `pip install -i https://pypi.org/project/pyprankerror/`.
 
 Now import pyprankerror to use it your own program:
 
