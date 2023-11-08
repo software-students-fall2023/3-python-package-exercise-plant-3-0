@@ -12,7 +12,7 @@ PyPrankError is a Python package that lets the user create silly (or serious) er
 ## [link to our package's page on the PyPI website](insert link!!!)
 
 ## How to Install and Use
-In your project directory, run `pip install pyprankerror==1.0.0`.
+In your project directory, run `pip install -i https://test.pypi.org/simple/ pyprankerror==1.0.0`.
 
 Now import pyprankerror to use it your own program:
 
@@ -48,7 +48,8 @@ Description: Returns a fake error message
 * err_type (str): Indicate a “syntax”, “runtime” or “logical” error type.
 * is_silly (bool): True indicates silly and less realistic and crash report.
 
-### [example Python program](insert link!!!)
+### [Example project](example-program.py)
+Run `python example-program.py`
 
 ## How to contribute
 
