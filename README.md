@@ -22,7 +22,7 @@ Now import pyprankerror to use it your own program:
 
 `generate_hacked_message(is_long, is_silly)`
 
-Description: Prints a message that makes it look like the user is being hacked. Return nothing.
+Description: Returns a message that makes it look like the user is being hacked. Return nothing.
 * is_long (bool): False indicates shorter output, True indicates longer output.
 * is_silly (bool): True indicates silly less realistic and silly variable and function names.
 
@@ -43,7 +43,7 @@ Description: Prints a fake crash report
 
 `generate_error(err_type, isSilly)`
 
-Description: Prints a fake error message
+Description: Returns a fake error message
 
 * err_type (str): Indicate a “syntax”, “runtime” or “logical” error type.
 * is_silly (bool): True indicates silly and less realistic and crash report.
