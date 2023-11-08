@@ -1,9 +1,7 @@
 import pytest
-import sys
-import os
 
 # test_generate_stacktrace.py
-from src.pyprankerror import generate_stacktrace, short, long, shortfunny, longfunny  # Import the function you want to test
+from src.PyPrankError.pyprankerror import generate_stacktrace, short, long, shortfunny, longfunny  # Import the function you want to test
 @pytest.fixture
 
 
