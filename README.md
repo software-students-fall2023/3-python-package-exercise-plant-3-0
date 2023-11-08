@@ -9,14 +9,22 @@ PyPrankError is a Python package that lets the user create silly (or serious) er
 3. [Phoebus Yip](https://github.com/phoebusyip)
 4. [Alicia Hwang](https://github.com/a-j-hwang)
 
-## [link to our package's page on the PyPI website](insert link!!!)
+## [link to our package's page on the PyPI website](https://pypi.org/project/pyprankerror/1.0.2/)
 
 ## How to Install and Use
-In your project directory, run `pip install -i https://test.pypi.org/simple/ pyprankerror==1.0.0`.
+Install `pipenv` if you have not already done so: `pip install pipenv`  
+
+In your project directory, run `pipenv install -i https://test.pypi.org/simple/ pyprankerror==1.0.2`.
+(If you get error, include `python -m` before pipenv.)
+
+Or if it does not work, run `pip install pyprankerror==1.0.2`
+
+To activate virtual environment: `pipenv shell` 
 
 Now import pyprankerror to use it your own program:
 
-`import pyprankerror`
+`from PyPrankError import pyprankerror`
+(If import give back error, change it to `import pyprankerror`)
 
 ### Documentation for all functions:  
 
@@ -70,7 +78,7 @@ Run `python example-program.py`
 ### To test, build, and distribute with package from PyPI
 - Try [installing and using your package](https://packaging.python.org/en/latest/tutorials/packaging-projects/#installing-your-newly-uploaded-package) in a separate Python project
 - Install `pipenv` if you have not already done so: `pip install pipenv`   
-- Create a pipenv-managed virtual environment and install the latest version of your package installed:  `pipenv install -i <link to package>` (Note that if you've previously created a pipenv virtual environment in the same directory, you may have to delete the old one first. Find out where it is located with the pipenv --venv command.)  
+- Create a pipenv-managed virtual environment and install the latest version of your package installed:  `pipenv install -i https://test.pypi.org/simple/ pyprankerror==1.0.2` (Note that if you've previously created a pipenv virtual environment in the same directory, you may have to delete the old one first. Find out where it is located with the pipenv --venv command.)  
 - Activate the virtual environment: `pipenv shell` 
 - Write test code. Note that when testing a PyPI package, the import statement should look like `from PyPrankError import pyprankerror`. If you use any test code from the repository, remove the `src.` in the import statements. 
 - Test the source code with Pytest from the root directory: `pytest` 
