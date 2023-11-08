@@ -1,7 +1,6 @@
 import random
 # some useless comments to trigger changes. TO DELETE
-# some useless comments to trigger changes. TO DELETE
-# some useless comments to trigger changes. TO DELETE
+
 # ------------------------ Hacked Message Generator Code -----------------------------
 silly_hackers = ["potato", "robot", "friendly alien", "unicorn", "talking toaster"]
 silly_hacker_names = ["Potato Inc.", "Elon Musk", "Zog the Alien", "Fluffy the Unicorn", "slurp-slurp"]
