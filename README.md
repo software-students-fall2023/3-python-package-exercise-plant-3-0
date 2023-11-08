@@ -24,7 +24,7 @@ To activate virtual environment: `pipenv shell`
 Now import pyprankerror to use it your own program:
 
 `from PyPrankError import pyprankerror`
-(If import give back error, change it to `import pyprankerror`)
+(If import gives back error, change it to `import pyprankerror`)
 
 ### Documentation for all functions:  
 
